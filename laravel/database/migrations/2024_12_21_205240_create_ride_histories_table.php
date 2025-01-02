@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('ride_histories', function (Blueprint $table) {
             $table->id();
-            $table->integer('passenger_id');
-            $table->integer('driver_id');
+            $table->foreignId('request_id')->constrained('ride_requests');
+            $table->foreignId('passenger_id')->constrained('passengers');
+            $table->foreignId('driver_id')->constrained('drivers');
             $table->string('start_location');
             $table->string('end_location');
             $table->string('start_time');

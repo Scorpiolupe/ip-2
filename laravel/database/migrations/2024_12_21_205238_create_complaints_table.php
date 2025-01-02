@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('complaints', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('contact_id')->constrained('contacts');
             $table->string('name');
             $table->string('email');
             $table->string('phone');
