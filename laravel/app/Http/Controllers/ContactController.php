@@ -39,7 +39,7 @@ class ContactController extends Controller
                 'phone' => $validated['phone'],
                 'complaint' => $validated['message']
             ]);
-            Contact::create($validated);
+            
         
             return redirect()
                 ->back()
@@ -53,11 +53,25 @@ class ContactController extends Controller
                 'phone' => $validated['phone'],
                 'suggestion' => $validated['message']
             ]);
-            Contact::create($validated);
+            
         
             return redirect()
                 ->back()
                 ->with('success', 'Öneriniz başarıyla alındı. En kısa sürede size dönüş yapacağız.');
+        }
+
+        elseif ($validated['subject'] === 'genel') {
+            Suggestion::create([
+                'name' => $validated['name'],
+                'email' => $validated['email'],
+                'phone' => $validated['phone'],
+                'messsage' => $validated['message']
+            ]);
+            
+        
+            return redirect()
+                ->back()
+                ->with('success', 'Mesajınız başarıyla alındı. En kısa sürede size dönüş yapacağız.');
         }
 
         elseif ($validated['subject'] === 'rezervasyon') {
@@ -67,7 +81,7 @@ class ContactController extends Controller
                 'phone' => $validated['phone'],
                 'reservation' => $validated['message']
             ]);
-            Contact::create($validated);
+            
         
             return redirect()
                 ->back()

@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('suggestions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('contact_id')->constrained('contacts');
             $table->string('name');
             $table->string('email');
             $table->string('phone');
@@ -21,7 +20,7 @@ return new class extends Migration
             $table->string('created_at')->now()->nullable();
             $table->string('updated_at')->now()->nullable();
         });
-    }
+    }   
 
     /**
      * Reverse the migrations.
