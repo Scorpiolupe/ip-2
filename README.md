@@ -2,11 +2,12 @@
  İnternet Programcılığı dönem sonu projesi olarak geliştirildi.
 
  Sitede kayıt olma ve giriş yapma işlemleri bulunmaktadır. Kayıt olan kullanıcıların şifreleri hashlenir ve güvenlik konusunda endişeleri giderilir.
- Ana sayfada ve eğer giriş yapılmışsa sağ üstte bulunan açılabilir seçenekler kısmı ile taksi çağırma fonksiyonu çalışır durumda.
- İletişim kısmında giriş yapmamış kullanıcıların bilgilerini doldurması beklenirken, giriş yapmış kullanıcıların bilgileri otomatik doldurulur ve sadece konuyu ve mesajı seçerek hızlı bir şekilde iletişime geçebilmelerine olanak tanınmıştır.
+ Ana sayfada ve eğer giriş yapılmışsa sağ üstte bulunan açılabilir seçenekler kısmı ile taksi çağırma fonksiyonu çalışır duruma gelir.
+ `İletişim` kısmında giriş yapmamış kullanıcıların bilgilerini doldurması beklenirken, giriş yapmış kullanıcıların bilgileri otomatik doldurulur ve sadece konuyu ve mesajı seçerek hızlı bir şekilde iletişime geçebilmelerine olanak tanınmıştır.
  Giriş yapan kullanıcılar için sağ üstten isimlerine tıkladıklarında `Şoför Ol` butonu ile şoför başvurusu formuna yönlendirilirler. Formu doldurup gönderen kullanıcılar şoförler sayfasında yerini alırken başka bir hesaptan taksi çağırıldığında şoför olarak atanırlar.
  Atanan şoför kullanıcıları sağ üstten isimlerine tıkladıklarında `Yolculuklarım` butonuna tıklayarak atandıkları yolculukları fiyat girerek tamamlayabilirler.
- Tamamlanan yolculuklar iki kullanıcının da `Yolculuklarım` kısmında gözükür.
+ Tamamlanan yolculuklar ve yolculuk detayları tablo halinde iki kullanıcının da `Yolculuklarım` kısmında gözükür. 
+ Veri tabanında şoförlerin gelirleri toplanmış halde gösterilir.
  
 
 
