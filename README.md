@@ -1,7 +1,12 @@
 # saritaksi
  İnternet Programcılığı dönem sonu projesi olarak geliştirildi.
 
- Taksi çağırma sitemiz, kullanıcıların hızlı ve kolay bir şekilde en yakın taksiyi bulup çağırmasını sağlayan bir platform. Kullanıcı dostu, basit bir arayüz kullandım. Kullanıcılar hem anlık hem de ileri tarihli taksi rezervasyonlarını zahmetsizce gerçekleştirebilir.
+ Sitede kayıt olma ve giriş yapma işlemleri bulunmaktadır. Kayıt olan kullanıcıların şifreleri hashlenir ve güvenlik konusunda endişeleri giderilir.
+ Ana sayfada ve eğer giriş yapılmışsa sağ üstte bulunan açılabilir seçenekler kısmı ile taksi çağırma fonksiyonu çalışır durumda.
+ İletişim kısmında giriş yapmamış kullanıcıların bilgilerini doldurması beklenirken, giriş yapmış kullanıcıların bilgileri otomatik doldurulur ve sadece konuyu ve mesajı seçerek hızlı bir şekilde iletişime geçebilmelerine olanak tanınmıştır.
+ Giriş yapan kullanıcılar için sağ üstten isimlerine tıkladıklarında `Şoför Ol` butonu ile şoför başvurusu formuna yönlendirilirler. Formu doldurup gönderen kullanıcılar şoförler sayfasında yerini alırken başka bir hesaptan taksi çağırıldığında şoför olarak atanırlar.
+ Atanan şoför kullanıcıları sağ üstten isimlerine tıkladıklarında `Yolculuklarım` butonuna tıklayarak atandıkları yolculukları fiyat girerek tamamlayabilirler.
+ Tamamlanan yolculuklar iki kullanıcının da `Yolculuklarım` kısmında gözükür.
  
 
 
@@ -12,9 +17,9 @@
 2. Composer kurun.
     >composer install
 
-3. env.example dosyasını aynı yola açtığınız .env dosyasına kopyalayın.
+3. `env.example` dosyasını aynı yola açtığınız `.env` dosyasına kopyalayın.
 
-4. `.env` dosyasını yapılandırın.
+4. `.env` dosyasını cihazınıza göre yapılandırın.
 
 5. APP_KEY oluşturun.
     >php artisan key:generate
